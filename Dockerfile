@@ -12,6 +12,7 @@ RUN echo "deb [signed-by=/usr/share/keyrings/jenkins-archive-keyring.gpg] https:
     apt-get update 
 RUN apt-get install -y jenkins
 
+
 # Expose port 8080 for Jenkins web interface and port 50000 for Jenkins agent communication
 EXPOSE 8080 50000
 
